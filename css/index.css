@@ -1,0 +1,302 @@
+    @font-face {
+        font-family: 'icomoon';
+        src: url('fonts/icomoon.eot?7kkyc2');
+        src: url('./fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype '), url('fonts/icomoon.ttf?7kkyc2') format('truetype'), url('fonts/icomoon.woff?7kkyc2') format('woff'), url('fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    /* 选中字体颜色 */
+    
+     ::-moz-selection {
+        background: #677987;
+        color: #ffffff;
+    }
+    
+     ::selection {
+        background: #677987;
+        color: #ffffff;
+    }
+    /* 选中字体颜色 */
+    
+    section .left a span {
+        font-family: 'icomoon';
+        font-size: 16px;
+        color: white;
+    }
+    
+    section .right a span {
+        font-family: 'icomoon';
+        font-size: 20px;
+        color: #555555;
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background-color: #F5F5F7;
+    }
+    
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    ol {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    input {
+        outline: none;
+        border-style: none;
+        text-indent: 20px;
+    }
+    
+    p {
+        cursor: grab;
+    }
+    
+    header {
+        width: 100%;
+        height: 100px;
+        background-color: #151719;
+    }
+    
+    header section {
+        position: relative;
+        width: 1000px;
+        height: 100%;
+        line-height: 100%;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #151719;
+    }
+    
+    header section label {
+        position: absolute;
+        top: 58%;
+        transform: translateY(-50%);
+        left: -20px;
+        font-size: 60px;
+        font-weight: 900;
+        /* font-family: Georgia, 'Times New Roman', Times, serif; */
+        font-family: KaiTi;
+        color: white;
+        text-shadow: 3px 2px 0px #EE3F4D;
+    }
+    
+    header section input {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 80px;
+        width: 60%;
+        height: 40%;
+        border-radius: 8px;
+        font-size: 18px;
+    }
+    
+    header section button {
+        position: absolute;
+        outline: none;
+        border-style: none;
+        top: 50%;
+        margin-top: -15px;
+        right: -20px;
+        width: 50px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 15px;
+        cursor: pointer;
+        color: #151719;
+        background-color: #ee3f4d;
+    }
+    
+    header section button:hover {
+        transform: scale(1.1);
+    }
+    
+    header section span {
+        position: absolute;
+        color: white;
+        font-family: KaiTi;
+        top: 15px;
+        left: 20px;
+    }
+    
+    section {
+        height: 570px;
+    }
+    
+    section .left,
+    section .right {
+        position: relative;
+        overflow-y: scroll;
+        float: left;
+        width: 50%;
+        height: 570px;
+        /* text-align: center; */
+    }
+    
+    section .left::-webkit-scrollbar,
+    section .right::-webkit-scrollbar {
+        /*滚动条整体样式*/
+        width: 15px;
+        /*高宽分别对应横竖滚动条的尺寸*/
+        height: 1px;
+    }
+    
+    section .left::-webkit-scrollbar-thumb,
+    section .right::-webkit-scrollbar-thumb {
+        /*滚动条里面小方块*/
+        border-radius: 10px;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        background: #474c4f;
+    }
+    
+    section .left::-webkit-scrollbar-track,
+    section .right::-webkit-scrollbar-track {
+        /*滚动条里面轨道*/
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        background: #ededed;
+    }
+    
+    section .left {
+        background-color: #222629;
+    }
+    
+    section .right {
+        background-color: #222629;
+    }
+    
+    section .left h1,
+    section .right h1 {
+        display: block;
+        position: relative;
+        margin: 30px auto;
+        width: 200px;
+        font-size: 30px;
+        font-weight: 500;
+        cursor: default;
+        color: #F5F5F7;
+    }
+    
+    #todocount,
+    #donecount {
+        position: absolute;
+        display: block;
+        top: -10px;
+        right: 25px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        border-radius: 25px 25px 25px 0;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        background-color: pink;
+    }
+    
+    #todocount {
+        background-color: #677987;
+    }
+    
+    #donecount {
+        background-color: #677987;
+    }
+    
+    section li {
+        position: relative;
+        margin: 15px auto;
+        width: 80%;
+        height: 40px;
+        border-radius: 8px;
+    }
+    
+    section .left li {
+        border-left: 8px solid #ee3f4d;
+        background-color: #909294;
+    }
+    
+    section .right li {
+        border-left: 8px solid #61ac85;
+        background-color: white;
+    }
+    
+    section .left input,
+    section .right input {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 10px;
+        float: left;
+        width: 20px;
+        height: 20px;
+    }
+    
+    section .left p,
+    section .right p {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 40px;
+        float: left;
+        font-size: 18px;
+    }
+    
+    section #ledit {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        text-indent: 0;
+        width: 525px;
+        height: 37px;
+        border-radius: 6px;
+        font-size: 17px;
+    }
+    
+    section #redit {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        text-indent: 0;
+        width: 525px;
+        height: 39px;
+        border-radius: 6px;
+        font-size: 17px;
+        background-color: #909294;
+    }
+    
+    section .left a,
+    section .right a {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        display: block;
+        float: left;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    footer {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        cursor: default;
+        font-size: 14px;
+        color: #777d80;
+        background-color: #474c4f;
+    }
