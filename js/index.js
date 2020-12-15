@@ -4,7 +4,7 @@ $(function() {
         $(this).prop("placeholder", "")
     })
     $(".enter").on("blur", function() {
-        $(this).prop("placeholder", "")
+        $(this).prop("placeholder", "添加年度任务")
     })
     load();
     $(".enter").on("keydown", function(e) {
