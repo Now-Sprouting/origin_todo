@@ -4,7 +4,7 @@ $(function() {
         $(this).prop("placeholder", "")
     })
     $(".enter").on("blur", function() {
-        $(this).prop("placeholder", "君子博学而日参省乎己  则知明而行无过矣")
+        $(this).prop("placeholder", "")
     })
     load();
     $(".enter").on("keydown", function(e) {
