@@ -37,6 +37,7 @@
     
     body {
         background-color: #F5F5F7;
+        height: 100vh;
     }
     
     ul {
@@ -63,8 +64,8 @@
     
     header {
         width: 100%;
-        height: 100px;
-        background-color: #151719;
+        height: 10%;
+        background-color: #bbe6d6;
     }
     
     header section {
@@ -74,7 +75,7 @@
         line-height: 100%;
         margin: 0 auto;
         text-align: center;
-        background-color: #151719;
+        background-color: #bbe6d6;
     }
     
     header section label {
@@ -82,12 +83,12 @@
         top: 58%;
         transform: translateY(-50%);
         left: -20px;
-        font-size: 60px;
+        font-size: 40px;
         font-weight: 900;
         /* font-family: Georgia, 'Times New Roman', Times, serif; */
         font-family: KaiTi;
         color: white;
-        text-shadow: 3px 2px 0px #EE3F4D;
+        /* text-shadow: 3px 2px 0px #EE3F4D; */
     }
     
     header section input {
@@ -115,8 +116,8 @@
         font-weight: 600;
         border-radius: 15px;
         cursor: pointer;
-        color: #151719;
-        background-color: #ee3f4d;
+        color: #ffffff;
+        background-color: #42b983;
     }
     
     header section button:hover {
@@ -132,7 +133,7 @@
     }
     
     section {
-        height: 570px;
+        height: 80%;
     }
     
     section .left,
@@ -141,7 +142,7 @@
         overflow-y: scroll;
         float: left;
         width: 50%;
-        height: 570px;
+        height: 100%;
         /* text-align: center; */
     }
     
@@ -170,11 +171,11 @@
     }
     
     section .left {
-        background-color: #222629;
+        background-color: #c8ebdf;
     }
     
     section .right {
-        background-color: #222629;
+        background-color: #c8ebdf;
     }
     
     section .left h1,
@@ -292,11 +293,11 @@
     
     footer {
         width: 100%;
-        height: 50px;
+        height: 10%;
         line-height: 50px;
         text-align: center;
         cursor: default;
         font-size: 14px;
         color: #777d80;
-        background-color: #474c4f;
+        background-color: #bbe6d6;
     }
